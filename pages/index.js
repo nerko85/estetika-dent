@@ -14,13 +14,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero title="Posjeta zubaru bez brige, suza, uz vrhunske strucnjake">
+      <Hero
+        title="Posjeta zubaru bez brige, suza, uz vrhunske strucnjake"
+        img="/images/mature-lady-showing-theets.png"
+      >
         <Button>Kontaktirajte nas</Button>
       </Hero>
 
-      <Slider elements={team}>
-        <h1>Team slider</h1>
-      </Slider>
+      <Hero
+        title="Osjećajte se kao kod kuće"
+        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        direction="left"
+      ></Hero>
+
+      <Slider elements={team}></Slider>
 
       <Team members={members} title="Vrhunski strucnjaci" />
     </>

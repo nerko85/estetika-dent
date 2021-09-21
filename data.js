@@ -43,4 +43,40 @@ const team = [
   },
 ];
 
-export { members, team };
+const company = {
+  name: "Estetika Dental",
+  address: [
+    {
+      id: 1,
+      location: "Lokacija 1, Ulica 1",
+      workingHours: {
+        from: {
+          day: "MON",
+          hour: "8:00AM",
+        },
+        to: {
+          day: "FRI",
+          hour: "5:00PM",
+        },
+      },
+      phone: "062-829-234",
+    },
+    {
+      id: 2,
+      location: "Lokacija 2, Ulica 2",
+      workingHours: {
+        from: {
+          day: "MON",
+          hour: "8:00AM",
+        },
+        to: {
+          day: "FRI",
+          hour: "5:00PM",
+        },
+      },
+      phone: "062-829-234",
+    },
+  ],
+};
+
+export { members, team, company };

@@ -15,6 +15,7 @@ const colors = {
   gold: "#CA9C5E",
   text: "#52575D",
   white: "#fff",
+  beige: "rgba(202,156,94,0.15)",
 };
 
 const mainTheme = {
@@ -48,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h3 {
-        font-size:4.8rem;
+        font-size:4rem;
     }
 
     p {
