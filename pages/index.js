@@ -5,8 +5,10 @@ import Team from "../components/Team/Team";
 import Slider from "../components/Slider";
 import CustomSection from "../components/CustomSection";
 import ContactStrip from "../components/ContactStrip";
+import Accomodation from "../components/Accomodation/Accomodation";
+import Services from "../components/Services";
 
-import { members, team } from "../data";
+import { members, team, accomodations, services } from "../data";
 
 export default function Home() {
   return (
@@ -32,7 +34,13 @@ export default function Home() {
 
       <Slider elements={team}></Slider>
 
+      <Accomodation accomodations={accomodations} />
+
       <Team members={members} title="Vrhunski strucnjaci" />
+
+      <Services services={services}>
+        <h1>Nase usluge</h1>
+      </Services>
 
       <ContactStrip text="Imate pitanja? Kontaktirajte nas" />
     </>

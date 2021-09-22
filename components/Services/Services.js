@@ -1,32 +1,38 @@
 import React from "react";
-import { Slider as StyledSlider } from "./Slider.style";
-import Card from "../../containers/Card";
+import { Services as StyledServices } from "./Services.style";
 import { VscArrowRight, VscArrowLeft } from "react-icons/vsc";
+import Card from "../../containers/Card";
 
 import SwiperCore, { Navigation, Pagination } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/swiper-react.cjs.js";
 
 SwiperCore.use([Navigation, Pagination]);
 
-export default function Slider({ elements, children, type, perView, nav }) {
+export default function Services({ children, services }) {
   return (
-    <StyledSlider type={type}>
-      <div className="inner">
+    <StyledServices>
+      <div className="container">
         {children}
         <Swiper
           spaceBetween={0}
-          slidesPerView={3}
+          slidesPerView={4}
           pagination={{ clickable: true }}
           navigation={{
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
           }}
         >
-          {elements?.map((element) => {
-            const { img, title, desc, name } = element;
+          {services?.map((service) => {
+            const { id, img, title, desc, name } = service;
             return (
-              <SwiperSlide>
-                <Card img={img} title={title} desc={desc} name={name} />
+              <SwiperSlide key={id}>
+                <Card
+                  img={img}
+                  title={title}
+                  desc={desc}
+                  name={name}
+                  type="services"
+                />
               </SwiperSlide>
             );
           })}
@@ -38,6 +44,6 @@ export default function Slider({ elements, children, type, perView, nav }) {
           </div>
         </Swiper>
       </div>
-    </StyledSlider>
+    </StyledServices>
   );
 }

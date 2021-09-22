@@ -1,7 +1,7 @@
 import React from "react";
 import { Section } from "./CustomSection.style";
 
-export default function CustomSection({ title, desc, img, children }) {
+export default function CustomSection({ title, desc, img, children, dir }) {
   return (
     <Section>
       <div className="inner">

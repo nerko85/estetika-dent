@@ -79,4 +79,55 @@ const company = {
   ],
 };
 
-export { members, team, company };
+const accomodations = [
+  {
+    id: 1,
+    title: "feeling great",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/feeling-great.svg",
+  },
+  {
+    id: 2,
+    title: "world class",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/world-class.svg",
+  },
+  {
+    id: 3,
+    title: "personalized",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/personalized.svg",
+  },
+];
+
+const services = [
+  {
+    id: 1,
+    title: "dental checkup",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+  },
+  {
+    id: 2,
+    title: "children",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+  },
+  {
+    id: 3,
+    title: "veneers",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+  },
+  {
+    id: 4,
+    title: "emergency",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+  },
+];
+
+export { members, team, company, accomodations, services };
