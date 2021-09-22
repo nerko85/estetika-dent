@@ -11,7 +11,7 @@ SwiperCore.use([Navigation, Pagination]);
 export default function Services({ children, services }) {
   return (
     <StyledServices>
-      <div className="container">
+      <div className="inner">
         {children}
         <Swiper
           spaceBetween={0}
@@ -21,21 +21,24 @@ export default function Services({ children, services }) {
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
           }}
+          loop={true}
         >
-          {services?.map((service) => {
-            const { id, img, title, desc, name } = service;
-            return (
-              <SwiperSlide key={id}>
-                <Card
-                  img={img}
-                  title={title}
-                  desc={desc}
-                  name={name}
-                  type="services"
-                />
-              </SwiperSlide>
-            );
-          })}
+          <div className="test">
+            {services?.map((service) => {
+              const { id, img, title, desc, name } = service;
+              return (
+                <SwiperSlide key={id}>
+                  <Card
+                    img={img}
+                    title={title}
+                    desc={desc}
+                    name={name}
+                    type="services"
+                  />
+                </SwiperSlide>
+              );
+            })}
+          </div>
           <div className="custom-btn swiper-prev">
             <VscArrowLeft />
           </div>

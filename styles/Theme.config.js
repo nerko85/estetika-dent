@@ -51,6 +51,7 @@ const GlobalStyles = createGlobalStyle`
 
     h3 {
         font-size:4rem;
+        font-weight:200;
     }
 
     p {

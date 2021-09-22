@@ -39,7 +39,7 @@ a {
   display: flex;
   border: 1px solid #ca9c5e;
   top: 50%;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 50%;
   z-index: 999;
   cursor: pointer;

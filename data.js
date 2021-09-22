@@ -109,24 +109,28 @@ const services = [
     title: "dental checkup",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+    img: "/images/dental-checkup.png",
   },
   {
     id: 2,
     title: "children",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+    img: "/images/children.png",
   },
   {
     id: 3,
     title: "veneers",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+    img: "/images/veneers.png",
   },
   {
     id: 4,
     title: "emergency",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+    img: "/images/emergency.png",
   },
 ];
 

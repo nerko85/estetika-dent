@@ -16,20 +16,22 @@ export default function Slider({ elements, children, type, perView, nav }) {
         <Swiper
           spaceBetween={0}
           slidesPerView={3}
-          pagination={{ clickable: true }}
           navigation={{
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
           }}
+          loop={true}
         >
-          {elements?.map((element) => {
-            const { img, title, desc, name } = element;
-            return (
-              <SwiperSlide>
-                <Card img={img} title={title} desc={desc} name={name} />
-              </SwiperSlide>
-            );
-          })}
+          <div className="test">
+            {elements?.map((element) => {
+              const { img, title, desc, name } = element;
+              return (
+                <SwiperSlide>
+                  <Card img={img} title={title} desc={desc} name={name} />
+                </SwiperSlide>
+              );
+            })}
+          </div>
           <div className="custom-btn swiper-prev">
             <VscArrowLeft />
           </div>
