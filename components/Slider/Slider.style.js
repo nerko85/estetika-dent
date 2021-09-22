@@ -7,10 +7,11 @@ const Slider = styled.div`
 
   .inner {
     margin: 0 auto;
+    width: 90%;
 
     .swiper-wrapper {
-      width: 90%;
-      margin: 0 auto;
+      ${"" /* width: 90%;
+      margin: 0 auto; */}
     }
   }
 `;

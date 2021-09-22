@@ -41,11 +41,12 @@ const GlobalStyles = createGlobalStyle`
 
     h1,h2,h3,h4 {
         font-family:${({ theme }) => theme.heading};
-        line-height:1.25;
+        line-height:1.15;
     }
 
     h1,h2 {
-        font-size:9rem;
+        font-size:8rem;
+        font-weight:200;
     }
 
     h3 {
@@ -54,8 +55,12 @@ const GlobalStyles = createGlobalStyle`
 
     p {
         font-family:${({ theme }) => theme.font};
-        font-size:1.8rem;
+        font-size:1.7rem;
         line-height:1.7;
+    }
+
+    a {
+        font-size:1.7rem;
     }
 
     @media(max-width:${({ theme }) => theme.desktop}){

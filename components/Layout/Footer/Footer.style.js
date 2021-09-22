@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Footer = styled.footer`
-  margin-top: 5rem;
   padding: 8rem 0;
   background: ${({ theme }) => theme.primary};
   color: #fff;
@@ -32,7 +31,7 @@ const Footer = styled.footer`
       li {
         margin-bottom: 1rem;
         a {
-          font-size: 1.8rem;
+          font-size: 1.7rem;
           line-height: 1.7;
         }
       }

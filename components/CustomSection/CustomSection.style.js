@@ -1,44 +1,45 @@
 import styled from "styled-components";
 
-const Hero = styled.section`
-  height: calc(100vh - 100px);
+const Section = styled.section`
   width: 100%;
-  background: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.beige};
+  border-top: 1px solid ${({ theme }) => theme.gold};
+  border-bottom: 1px solid ${({ theme }) => theme.gold};
 
   .inner {
     width: 88%;
-    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    min-height: calc(100vh - 100px);
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr;
 
     @media (max-width: ${({ theme }) => theme.desktop}) {
       grid-template-columns: 3fr 2fr;
     }
 
-    .hero--text {
+    .section--text {
+      max-width: 70%;
+      margin-left: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      color: #fff;
+      color: ${({ theme }) => theme.text};
       font-family: ${({ theme }) => theme.heading};
 
       h1 {
         margin-bottom: 5rem;
-        color: #fff;
-        max-width: 80%;
+        color: ${({ theme }) => theme.gold};
         font-family: ${({ theme }) => theme.heading};
       }
     }
 
-    .hero--img {
+    .section--media {
+      border-right: 1px solid ${({ theme }) => theme.gold};
+      order: -1;
       height: calc(100vh - 100px);
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       overflow: hidden;
       position: relative;
-      border-left: 1px solid ${({ theme }) => theme.gold};
       img {
         height: 100%;
         width: auto;
@@ -47,4 +48,4 @@ const Hero = styled.section`
   }
 `;
 
-export { Hero };
+export { Section };

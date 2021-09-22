@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { VscArrowRight } from "react-icons/vsc";
 
 import { Logo, Navigation, Header as StyledHeader } from "./Header.style";
 
@@ -40,7 +41,12 @@ export default function Header() {
               </li>
               <li className="book-term">
                 <Link href="/book">
-                  <a>Bukiraj onilie</a>
+                  <a>
+                    Bukiraj onilie{" "}
+                    <span>
+                      <VscArrowRight />
+                    </span>
+                  </a>
                 </Link>
               </li>
             </ul>
