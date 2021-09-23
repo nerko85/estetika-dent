@@ -5,10 +5,12 @@ import Team from "../components/Team/Team";
 import Slider from "../components/Slider";
 import CustomSection from "../components/CustomSection";
 import ContactStrip from "../components/ContactStrip";
-import Accomodation from "../components/Accomodation/Accomodation";
+import Accomodation from "../components/Accomodation";
 import Services from "../components/Services";
+import Pricing from "../components/Pricing";
+import Accordion from "../components/Accordion";
 
-import { members, team, accomodations, services } from "../data";
+import { members, team, accomodations, services, faqs } from "../data";
 
 export default function Home() {
   return (
@@ -41,6 +43,12 @@ export default function Home() {
       <Services services={services}>
         <h1>Nase usluge</h1>
       </Services>
+
+      <Pricing />
+
+      <Accordion faqs={faqs}>
+        <h1>Cesta pitanja</h1>
+      </Accordion>
 
       <ContactStrip text="Imate pitanja? Kontaktirajte nas" />
     </>

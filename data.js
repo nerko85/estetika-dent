@@ -134,4 +134,33 @@ const services = [
   },
 ];
 
-export { members, team, company, accomodations, services };
+const faqs = [
+  {
+    id: 1,
+    question:
+      "I'm terrified of the dentist, but I have a toothache! Can you help me?",
+    answer:
+      "Check-up and cleans start from $170. We're preferred providers for NIB, HCF, Medibank and Westfund. Depending on your plan, your health fund may cover the entire appointment. We also support the Medicare Child Dental Benefit Scheme. All of our prices are in line with the New South Wales average provided by the Australian Dental Association. We only do good surprises at TL Dental, that’s why we are completely transparent and upfront with our fees. You’ll find all of our pricing listed on the treatment pages of our website.",
+  },
+  {
+    id: 2,
+    question: "How much does it cost for a regular check-up and clean?",
+    answer:
+      "Check-up and cleans start from $170. We're preferred providers for NIB, HCF, Medibank and Westfund. Depending on your plan, your health fund may cover the entire appointment. We also support the Medicare Child Dental Benefit Scheme. All of our prices are in line with the New South Wales average provided by the Australian Dental Association. We only do good surprises at TL Dental, that’s why we are completely transparent and upfront with our fees. You’ll find all of our pricing listed on the treatment pages of our website.",
+  },
+  {
+    id: 3,
+    question:
+      "I'm terrified of the dentist, but I have a toothache! Can you help me?",
+    answer:
+      "Check-up and cleans start from $170. We're preferred providers for NIB, HCF, Medibank and Westfund. Depending on your plan, your health fund may cover the entire appointment. We also support the Medicare Child Dental Benefit Scheme. All of our prices are in line with the New South Wales average provided by the Australian Dental Association. We only do good surprises at TL Dental, that’s why we are completely transparent and upfront with our fees. You’ll find all of our pricing listed on the treatment pages of our website.",
+  },
+  {
+    id: 4,
+    question: "Are you accepting new patients?",
+    answer:
+      "Check-up and cleans start from $170. We're preferred providers for NIB, HCF, Medibank and Westfund. Depending on your plan, your health fund may cover the entire appointment. We also support the Medicare Child Dental Benefit Scheme. All of our prices are in line with the New South Wales average provided by the Australian Dental Association. We only do good surprises at TL Dental, that’s why we are completely transparent and upfront with our fees. You’ll find all of our pricing listed on the treatment pages of our website.",
+  },
+];
+
+export { members, team, company, accomodations, services, faqs };

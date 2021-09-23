@@ -50,7 +50,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h3 {
-        font-size:4rem;
+        ${"" /* font-size:4rem; */}
+        font-size: 3.5rem;
         font-weight:200;
     }
 
@@ -70,7 +71,7 @@ const GlobalStyles = createGlobalStyle`
         }
 
         h3 {
-        font-size:4rem;
+        font-size: 3.5rem;
         }
     }
 

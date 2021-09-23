@@ -27,7 +27,7 @@ const GridItem = styled.div`
     h3 {
       font-size: 4rem;
       color: ${({ theme }) => theme.gold};
-      margin: 2rem 0;
+      margin-top: 2rem;
     }
 
     P {
