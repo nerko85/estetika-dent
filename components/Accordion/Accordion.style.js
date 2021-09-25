@@ -14,6 +14,7 @@ const Accordion = styled.section`
   }
 `;
 const AccordionItem = styled.section`
+  cursor: pointer;
   margin: 4rem 0;
   color: #fff;
   .title {

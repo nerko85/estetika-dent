@@ -20,6 +20,7 @@ export default function Accordion({ children, faqs }) {
                 question={faq.question}
                 answer={faq.answer}
                 current={current}
+                setCurrent={setCurrent}
               />
             ))}
         </div>
