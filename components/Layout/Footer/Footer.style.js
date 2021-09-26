@@ -56,6 +56,7 @@ const Footer = styled.footer`
           margin-right: 1.6rem;
           cursor: pointer;
           transition: background 0.5s ease;
+          line-height: 0;
           svg {
             color: ${({ theme }) => theme.gold};
           }

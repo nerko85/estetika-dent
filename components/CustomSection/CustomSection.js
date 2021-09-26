@@ -3,12 +3,14 @@ import { Section } from "./CustomSection.style";
 
 export default function CustomSection({ title, desc, img, children, dir }) {
   return (
-    <Section>
+    <Section dir={dir}>
       <div className="inner">
         <div className="section--text">
-          <h1>{title}</h1>
-          {desc && <p className="section--desc">{desc}</p>}
-          {children}
+          <div className="section-content">
+            <h1>{title}</h1>
+            {desc && <p className="section--desc">{desc}</p>}
+            {children}
+          </div>
         </div>
         <div className="section--media">
           <img src={img} alt="Mature lady showing her theets" />
@@ -17,3 +19,7 @@ export default function CustomSection({ title, desc, img, children, dir }) {
     </Section>
   );
 }
+
+CustomSection.defaultProps = {
+  dir: "right",
+};

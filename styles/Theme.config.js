@@ -45,7 +45,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h1,h2 {
-        font-size:8rem;
+        font-size:clamp(6rem, 30vw - 1rem, 9rem);
+        line-height:1.3;
         font-weight:200;
     }
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Button = styled.div`
-  padding: 2rem 3rem;
+  padding: 2rem 4rem;
   border: 1px solid ${({ theme }) => theme.gold};
   border-radius: 5rem;
   cursor: pointer;
@@ -9,6 +9,7 @@ const Button = styled.div`
   a {
     text-transform: uppercase;
     font-size: 1.4rem;
+    font-family: ${({ theme }) => theme.font};
   }
 
   &:hover {

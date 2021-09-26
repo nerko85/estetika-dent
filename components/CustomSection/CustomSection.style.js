@@ -7,34 +7,42 @@ const Section = styled.section`
   border-bottom: 1px solid ${({ theme }) => theme.gold};
 
   .inner {
-    width: 88%;
-    margin-right: auto;
+    max-width: 90vw;
+    ${({ dir }) =>
+      dir === "left" ? "margin-left: auto" : "margin-right: auto"};
     display: grid;
-    grid-template-columns: auto 1fr;
-
+    grid-template-columns: ${({ dir }) =>
+      dir === "left" ? "1fr auto" : "auto 1fr"};
     @media (max-width: ${({ theme }) => theme.desktop}) {
       grid-template-columns: 3fr 2fr;
     }
 
     .section--text {
-      max-width: 70%;
-      margin-left: auto;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding: 0 15rem;
       color: ${({ theme }) => theme.text};
       font-family: ${({ theme }) => theme.heading};
 
-      h1 {
-        margin-bottom: 5rem;
-        color: ${({ theme }) => theme.gold};
-        font-family: ${({ theme }) => theme.heading};
+      .section-content {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+          margin-bottom: 5rem;
+          color: ${({ theme }) => theme.gold};
+          font-family: ${({ theme }) => theme.heading};
+        }
+        p {
+          margin-bottom: 5rem;
+        }
       }
     }
 
     .section--media {
+      order: ${({ dir }) => (dir === "left" ? 1 : -1)};
       border-right: 1px solid ${({ theme }) => theme.gold};
-      order: -1;
+      border-left: 1px solid ${({ theme }) => theme.gold};
       height: calc(100vh - 100px);
       display: flex;
       justify-content: flex-start;
