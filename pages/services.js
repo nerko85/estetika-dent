@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AdditionalInfo from "../components/AdditionalInfo";
 import ContactStrip from "../components/ContactStrip";
 import CustomSection from "../components/CustomSection";
 import Button from "../containers/Button";
@@ -21,6 +22,8 @@ export default function Services() {
       >
         <Button>Bukiraj online</Button>
       </CustomSection>
+
+      <AdditionalInfo />
 
       <ContactStrip text="Imate pitanja? Kontaktirajte nas" />
     </>

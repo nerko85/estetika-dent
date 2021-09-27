@@ -66,6 +66,8 @@ const company = {
   address: [
     {
       id: 1,
+      name: "Derventa",
+      address: "7440 DERVENTA",
       location: "Lokacija 1, Ulica 1",
       workingHours: {
         from: {
@@ -78,9 +80,13 @@ const company = {
         },
       },
       phone: "062-829-234",
+      mobile: "062-829-234",
+      email: "example@mail.com",
     },
     {
       id: 2,
+      name: "Gradačac",
+      address: "7440 GRADAČAC",
       location: "Lokacija 2, Ulica 2",
       workingHours: {
         from: {
@@ -93,6 +99,8 @@ const company = {
         },
       },
       phone: "062-829-234",
+      mobile: "062-829-234",
+      email: "example@mail.com",
     },
   ],
 };
