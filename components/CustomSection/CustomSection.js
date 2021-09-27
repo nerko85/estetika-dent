@@ -1,7 +1,14 @@
 import React from "react";
 import { Section } from "./CustomSection.style";
 
-export default function CustomSection({ title, desc, img, children, dir }) {
+export default function CustomSection({
+  title,
+  desc,
+  img,
+  dir,
+  quote,
+  children,
+}) {
   return (
     <Section dir={dir}>
       <div className="inner">
@@ -14,6 +21,12 @@ export default function CustomSection({ title, desc, img, children, dir }) {
         </div>
         <div className="section--media">
           <img src={img} alt="Mature lady showing her theets" />
+          {quote && (
+            <div className="quote">
+              <blockquote>{quote}</blockquote>
+              <span>Aleksandra Kovac</span>
+            </div>
+          )}
         </div>
       </div>
     </Section>

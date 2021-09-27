@@ -11,15 +11,14 @@ const GridItem = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10rem;
 
-  &:nth-child(odd) {
-    margin-top: 10rem;
-  }
-
-  &:nth-child(2) {
-    justify-content: flex-start;
-  }
-  .item-image {
+  @media (min-width: ${({ theme }) => theme.widescreen}) {
+    &:nth-child(2),
+    &:nth-child(5) {
+      margin-top: 0rem;
+      justify-content: flex-start;
+    }
   }
 
   .item-text {

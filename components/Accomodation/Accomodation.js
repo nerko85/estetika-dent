@@ -5,7 +5,7 @@ export default function Accomodation({ accomodations, children }) {
   return (
     <StyledAccomodation>
       <div className="container">
-        <h1>{children}</h1>
+        {children}
         <div className="grid">
           {accomodations &&
             accomodations.map((item) => {

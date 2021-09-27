@@ -13,6 +13,7 @@ import Accordion from "../components/Accordion";
 import { members, team, accomodations, services, faqs } from "../data";
 
 export default function Home() {
+  const homeMembers = members.slice(3);
   return (
     <>
       <Head>
@@ -38,7 +39,7 @@ export default function Home() {
 
       <Accomodation accomodations={accomodations} />
 
-      <Team members={members} title="Vrhunski strucnjaci" />
+      <Team members={homeMembers} title="Vrhunski strucnjaci" />
 
       <Services services={services}>
         <h1>Nase usluge</h1>

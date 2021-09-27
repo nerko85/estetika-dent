@@ -47,11 +47,44 @@ const Section = styled.section`
       display: flex;
       justify-content: flex-start;
       overflow: hidden;
+      isolation: isolate;
       position: relative;
+
+      ${
+        "" /* &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #141c5eed, #fff0 50%);
+        opacity: 1;
+        isolation: isolate;
+        filter: ;
+      } */
+      }
+      
       img {
         height: 100%;
         width: auto;
+        position:relative;
       }
+      .quote {
+        position: absolute;
+        z-index: 99;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        max-width: 70%;
+        text-align: center;
+        font-family: ${({ theme }) => theme.font};
+        span {
+          display: inline-block;
+          margin-top: 3rem;
+          color: #fff;
+          font-family: ${({ theme }) => theme.heading};
+          font-size: 1.8rem;
+        }
     }
   }
 `;

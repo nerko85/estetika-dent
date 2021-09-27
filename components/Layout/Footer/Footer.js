@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer as StyledFooter } from "./Footer.style";
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 import { company } from "../../../data";
@@ -10,6 +11,9 @@ export default function Footer() {
   return (
     <StyledFooter>
       <div className="container">
+        <h1>
+          <Image src="/footer-logo.svg" width="220" height="55" />
+        </h1>
         <div className="inner">
           <div className="details">
             {company?.address.map((address) => {

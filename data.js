@@ -12,7 +12,25 @@ const members = [
     img: "/images/team-emina-ina.png",
   },
   {
-    id: 1,
+    id: 3,
+    heading: "Filip Skip",
+    desc: "Doktor stomatologije",
+    img: "/images/team-filip-skip.png",
+  },
+  {
+    id: 4,
+    heading: "Danijel Ruvic",
+    desc: "Doktor stomatologije",
+    img: "/images/team-danijel-ruvic.png",
+  },
+  {
+    id: 5,
+    heading: "Emina Ina",
+    desc: "Doktor stomatologije",
+    img: "/images/team-emina-ina.png",
+  },
+  {
+    id: 6,
     heading: "Filip Skip",
     desc: "Doktor stomatologije",
     img: "/images/team-filip-skip.png",

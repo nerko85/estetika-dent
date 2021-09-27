@@ -5,7 +5,7 @@ const Hero = styled.section`
   background: ${({ theme }) => theme.primary};
 
   .inner {
-    max-width: 90%;
+    ${"" /* max-width: 90%; */}
     margin-left: auto;
     display: grid;
     min-height: calc(100vh - 100px);
@@ -16,6 +16,7 @@ const Hero = styled.section`
     }
 
     .hero--text {
+      padding: 0 15rem;
       margin-left: auto;
       display: flex;
       flex-direction: column;
@@ -27,7 +28,7 @@ const Hero = styled.section`
       h1 {
         margin-bottom: 5rem;
         color: #fff;
-        max-width: 60%;
+        ${"" /* max-width: 60%; */}
         font-family: ${({ theme }) => theme.heading};
       }
     }
@@ -50,7 +51,6 @@ const Hero = styled.section`
         background: linear-gradient(0deg, #141c5eed, #fff0 50%);
         opacity: 1;
         isolation: isolate;
-        filter: ;
       }
 
       img {

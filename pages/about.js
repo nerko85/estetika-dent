@@ -3,9 +3,10 @@ import Hero from "../components/Hero";
 import Team from "../components/Team";
 import ContactStrip from "../components/ContactStrip";
 import CustomSection from "../components/CustomSection";
+import Accomodation from "../components/Accomodation";
 import Button from "../containers/Button";
 
-import { members } from "../data";
+import { members, accomodations } from "../data";
 
 export default function About() {
   return (
@@ -22,6 +23,10 @@ export default function About() {
       >
         <Button>Bukiraj online</Button>
       </Hero>
+
+      <Accomodation accomodations={accomodations}>
+        <h1>Vrhunski komfort</h1>
+      </Accomodation>
 
       <CustomSection
         title="Lokacija 1"

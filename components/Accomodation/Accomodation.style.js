@@ -4,6 +4,12 @@ const Accomodation = styled.section`
   padding: 14rem 0;
   background: ${({ theme }) => theme.beige};
 
+  h1 {
+    text-align: center;
+    color: ${({ theme }) => theme.gold};
+    margin-bottom: 8rem;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
