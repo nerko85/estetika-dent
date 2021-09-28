@@ -1,9 +1,9 @@
 import React from "react";
 import { Accomodation as StyledAccomodation } from "./Accomodation.style";
 
-export default function Accomodation({ accomodations, children }) {
+export default function Accomodation({ accomodations, children, size }) {
   return (
-    <StyledAccomodation>
+    <StyledAccomodation size={size}>
       <div className="container">
         {children}
         <div className="grid">

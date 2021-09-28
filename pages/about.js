@@ -6,7 +6,7 @@ import CustomSection from "../components/CustomSection";
 import Accomodation from "../components/Accomodation";
 import Button from "../containers/Button";
 
-import { members, accomodations } from "../data";
+import { members, comfort } from "../data";
 
 export default function About() {
   return (
@@ -24,7 +24,7 @@ export default function About() {
         <Button>Bukiraj online</Button>
       </Hero>
 
-      <Accomodation accomodations={accomodations}>
+      <Accomodation accomodations={comfort} size="small">
         <h1>Vrhunski komfort</h1>
       </Accomodation>
 

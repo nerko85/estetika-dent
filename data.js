@@ -189,4 +189,49 @@ const faqs = [
   },
 ];
 
-export { members, team, company, accomodations, services, faqs };
+const comfort = [
+  {
+    id: 1,
+    title: "On-site parking",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/feeling-great.svg",
+  },
+  {
+    id: 2,
+    title: "Netflix",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/world-class.svg",
+  },
+  {
+    id: 3,
+    title: "Relaxation room",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/personalized.svg",
+  },
+  {
+    id: 4,
+    title: "Childrens playroom",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/feeling-great.svg",
+  },
+  {
+    id: 5,
+    title: "On-site Motel",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/world-class.svg",
+  },
+  {
+    id: 6,
+    title: "Advanced equipment",
+    desc:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    img: "/images/personalized.svg",
+  },
+];
+
+export { members, team, company, accomodations, services, faqs, comfort };

@@ -1,4 +1,17 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, keyframes } from "styled-components";
+
+const arrow = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+`;
 
 const responsive = {
   mobile: "480px",
@@ -23,6 +36,7 @@ const mainTheme = {
   heading: "Butler",
   ...colors,
   ...responsive,
+  arrow,
 };
 
 const darkTheme = {};

@@ -42,6 +42,10 @@ const Navigation = styled.nav`
         margin-left: 1rem;
         color: ${({ theme }) => theme.gold};
       }
+
+      &:hover svg {
+        animation: ${({ theme }) => theme.arrow} 1s ease infinite;
+      }
     }
   }
 

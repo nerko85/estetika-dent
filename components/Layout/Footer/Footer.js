@@ -12,7 +12,11 @@ export default function Footer() {
     <StyledFooter>
       <div className="container">
         <h1>
-          <Image src="/footer-logo.svg" width="220" height="55" />
+          <Link href="/">
+            <a>
+              <Image src="/footer-logo.svg" width="220" height="55" />
+            </a>
+          </Link>
         </h1>
         <div className="inner">
           <div className="details">
