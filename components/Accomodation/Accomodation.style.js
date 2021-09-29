@@ -3,6 +3,8 @@ import styled from "styled-components";
 const Accomodation = styled.section`
   padding: 14rem 0;
   background: ${({ theme }) => theme.beige};
+  border-top: 1px solid ${({ theme }) => theme.gold};
+  border-bottom: 1px solid ${({ theme }) => theme.gold};
 
   h1 {
     text-align: center;

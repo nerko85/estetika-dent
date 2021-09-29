@@ -23,29 +23,27 @@ export default function Services({ children, services }) {
           }}
           loop={true}
         >
-          <div className="test">
-            {services?.map((service) => {
-              const { id, img, title, desc, name } = service;
-              return (
-                <SwiperSlide key={id}>
-                  <Card
-                    img={img}
-                    title={title}
-                    desc={desc}
-                    name={name}
-                    type="services"
-                  />
-                </SwiperSlide>
-              );
-            })}
-          </div>
-          <div className="custom-btn swiper-prev">
-            <VscArrowLeft />
-          </div>
-          <div className="custom-btn swiper-next">
-            <VscArrowRight />
-          </div>
+          {services?.map((service) => {
+            const { id, img, title, desc, name } = service;
+            return (
+              <SwiperSlide key={id}>
+                <Card
+                  img={img}
+                  title={title}
+                  desc={desc}
+                  name={name}
+                  type="services"
+                />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
+        <div className="custom-btn swiper-prev">
+          <VscArrowLeft />
+        </div>
+        <div className="custom-btn swiper-next">
+          <VscArrowRight />
+        </div>
       </div>
     </StyledServices>
   );

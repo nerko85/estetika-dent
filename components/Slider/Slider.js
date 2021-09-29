@@ -22,23 +22,21 @@ export default function Slider({ elements, children, type, perView, nav }) {
           }}
           loop={true}
         >
-          <div className="test">
-            {elements?.map((element) => {
-              const { img, title, desc, name } = element;
-              return (
-                <SwiperSlide>
-                  <Card img={img} title={title} desc={desc} name={name} />
-                </SwiperSlide>
-              );
-            })}
-          </div>
-          <div className="custom-btn swiper-prev">
-            <VscArrowLeft />
-          </div>
-          <div className="custom-btn swiper-next">
-            <VscArrowRight />
-          </div>
+          {elements?.map((element) => {
+            const { img, title, desc, name } = element;
+            return (
+              <SwiperSlide>
+                <Card img={img} title={title} desc={desc} name={name} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
+        <div className="custom-btn swiper-prev">
+          <VscArrowLeft />
+        </div>
+        <div className="custom-btn swiper-next">
+          <VscArrowRight />
+        </div>
       </div>
     </StyledSlider>
   );

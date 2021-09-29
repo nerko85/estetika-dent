@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 const Services = styled.section`
   background: ${({ theme }) => theme.primary};
-
+  padding: 0 12rem;
+  position: relative;
   .inner {
-    padding: 5rem 0;
     border-left: 1px solid ${({ theme }) => theme.gold};
     border-right: 1px solid ${({ theme }) => theme.gold};
+    padding: 5rem 0;
     h1 {
-      margin: 5rem 0 10rem;
+      padding: 5rem 0 2rem;
       color: #fff;
       text-align: center;
     }

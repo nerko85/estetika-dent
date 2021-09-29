@@ -46,5 +46,9 @@ a {
 }
 
 .custom-btn.swiper-next {
-  right: 0;
+  right: 2rem;
+}
+
+.custom-btn.swiper-prev {
+  left: 2rem;
 }
