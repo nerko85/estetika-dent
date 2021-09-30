@@ -35,7 +35,7 @@ export default function Slider({ elements, children, type, perView, nav }) {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 3,
               spaceBetween: 50,
             },
           }}
