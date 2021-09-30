@@ -6,9 +6,6 @@ const Footer = styled.footer`
   color: #fff;
   font-family: ${({ theme }) => theme.font};
   .inner {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
     ul {
       list-style: none;
     }
@@ -69,6 +66,25 @@ const Footer = styled.footer`
           }
         }
       }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    padding: 4rem 0;
+    .inner {
+      & > * {
+        margin-bottom: 2rem;
+      }
+      .footer--links,
+      .social {
+        margin-left: 0;
+      }
+    }
+  }
+  @media (min-width: ${({ theme }) => theme.tablet}) {
+    .inner {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
     }
   }
 `;

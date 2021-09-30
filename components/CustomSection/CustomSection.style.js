@@ -1,25 +1,18 @@
 import styled from "styled-components";
 
 const Section = styled.section`
+  padding: 4rem 0;
   width: 100%;
   background: ${({ theme }) => theme.beige};
   border-top: 1px solid ${({ theme }) => theme.gold};
   border-bottom: 1px solid ${({ theme }) => theme.gold};
 
   .inner {
-    max-width: 90vw;
-    ${({ dir }) =>
-      dir === "left" ? "margin-left: auto" : "margin-right: auto"};
+    padding: 0 2rem;
     display: grid;
-    grid-template-columns: ${({ dir }) =>
-      dir === "left" ? "1fr auto" : "auto 1fr"};
-    @media (max-width: ${({ theme }) => theme.desktop}) {
-      grid-template-columns: 3fr 2fr;
-    }
-
+    ${"" /* margin: 0 auto; */}
     .section--text {
       display: flex;
-      padding: 0 15rem;
       color: ${({ theme }) => theme.text};
       font-family: ${({ theme }) => theme.heading};
 
@@ -41,32 +34,14 @@ const Section = styled.section`
 
     .section--media {
       order: ${({ dir }) => (dir === "left" ? 1 : -1)};
-      border-right: 1px solid ${({ theme }) => theme.gold};
-      border-left: 1px solid ${({ theme }) => theme.gold};
-      height: calc(100vh - 100px);
       display: flex;
-      justify-content: flex-start;
       overflow: hidden;
       isolation: isolate;
       position: relative;
 
-      ${
-        "" /* &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(0deg, #141c5eed, #fff0 50%);
-        opacity: 1;
-        isolation: isolate;
-        filter: ;
-      } */
-      }
-      
       img {
-        height: 100%;
-        width: auto;
-        position:relative;
+        width: 100%;
+        position: relative;
       }
       .quote {
         position: absolute;
@@ -85,6 +60,34 @@ const Section = styled.section`
           font-family: ${({ theme }) => theme.heading};
           font-size: 1.8rem;
         }
+      }
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    padding: 0;
+    .inner {
+      padding: 0;
+      max-width: 90vw;
+      ${({ dir }) =>
+        dir === "left" ? "margin-left: auto" : "margin-right: auto"};
+      grid-template-columns: ${({ dir }) =>
+        dir === "left" ? "1fr auto" : "auto 1fr"};
+
+      .section--text {
+        padding: 0 15rem;
+      }
+
+      .section--media {
+        justify-content: flex-start;
+        height: calc(100vh - 100px);
+        border-right: 1px solid ${({ theme }) => theme.gold};
+        border-left: 1px solid ${({ theme }) => theme.gold};
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
     }
   }
 `;

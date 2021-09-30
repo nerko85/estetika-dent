@@ -31,6 +31,16 @@ const Accomodation = styled.section`
       }
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    padding: 6rem 0;
+    .grid {
+      .grid--item img {
+        max-width: 250px;
+        margin-bottom: 2rem;
+      }
+    }
+  }
 `;
 
 export { Accomodation };

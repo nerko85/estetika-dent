@@ -6,6 +6,7 @@ const Header = styled.header`
   background: ${({ theme }) => theme.primary};
   border-bottom: 1px solid ${({ theme }) => theme.gold};
   .inner {
+    min-height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;

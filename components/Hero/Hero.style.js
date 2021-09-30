@@ -5,14 +5,12 @@ const Hero = styled.section`
   background: ${({ theme }) => theme.primary};
 
   .inner {
-    ${"" /* max-width: 90%; */}
     margin-left: auto;
     display: grid;
     min-height: calc(100vh - 100px);
-    grid-template-columns: 1fr auto;
 
-    @media (max-width: ${({ theme }) => theme.desktop}) {
-      grid-template-columns: 3fr 2fr;
+    @media (min-width: ${({ theme }) => theme.tablet}) {
+      grid-template-columns: 1fr auto;
     }
 
     .hero--text {
@@ -81,6 +79,15 @@ const Hero = styled.section`
           line-height: 1.5;
           color: #fff;
         }
+      }
+    }
+
+    @media (max-width: ${({ theme }) => theme.tablet}) {
+      .hero--text {
+        padding: 0 3rem;
+      }
+      .hero--img {
+        display: none;
       }
     }
   }

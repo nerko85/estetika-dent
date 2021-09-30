@@ -27,6 +27,15 @@ const Card = styled.div`
     font-size: 2rem;
     color: ${({ theme }) => theme.gold};
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    border: none;
+    padding: 3rem;
+    img {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
 `;
 
 export { Card };

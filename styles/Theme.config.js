@@ -88,6 +88,10 @@ const GlobalStyles = createGlobalStyle`
         h3 {
         font-size: 3.5rem;
         }
+        
+        .container-fluid {
+          margin:0 2rem;
+        }
     }
 
     @media(max-width:${({ theme }) => theme.tablet}){
@@ -97,6 +101,10 @@ const GlobalStyles = createGlobalStyle`
 
         h3 {
         font-size:2.6rem;
+        }
+
+        .container {
+          width:100%;
         }
     }
     

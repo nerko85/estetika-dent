@@ -33,17 +33,24 @@ const PricingStrip = styled.section`
   border-top: 1px solid ${({ theme }) => theme.gold};
   border-bottom: 1px solid ${({ theme }) => theme.gold};
   .inner {
-    display: flex;
     & > * {
       padding: 2rem 0;
       flex: 1;
     }
     .pricing {
-      border-right: 1px solid ${({ theme }) => theme.gold};
+      border-bottom: 1px solid ${({ theme }) => theme.gold};
     }
     h1 {
-      font-size: 7rem;
       text-align: center;
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.tablet}) {
+    .inner {
+      display: flex;
+      .pricing {
+        border-right: 1px solid ${({ theme }) => theme.gold};
+      }
     }
   }
 `;

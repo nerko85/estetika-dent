@@ -37,6 +37,21 @@ const Services = styled.section`
       }
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    padding: 0 2rem;
+
+    .inner {
+      border: none;
+
+      h1 {
+        padding: 0;
+      }
+      .swiper-container {
+        margin: 0;
+      }
+    }
+  }
 `;
 
 export { Services };

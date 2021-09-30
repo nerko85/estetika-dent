@@ -22,6 +22,27 @@ export default function Services({ children, services }) {
             prevEl: ".swiper-prev",
           }}
           loop={true}
+          breakpoints={{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            1400: {
+              slidesPerView: 4,
+            },
+          }}
         >
           {services?.map((service) => {
             const { id, img, title, desc, name } = service;

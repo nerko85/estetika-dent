@@ -21,6 +21,24 @@ export default function Slider({ elements, children, type, perView, nav }) {
             prevEl: ".swiper-prev",
           }}
           loop={true}
+          breakpoints={{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
         >
           {elements?.map((element) => {
             const { img, title, desc, name } = element;
