@@ -90,6 +90,21 @@ const Section = styled.section`
       }
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    .inner {
+      .section--media {
+        order: -1;
+      }
+
+      .section--text {
+        .section-content > h1 {
+          margin: 2rem 0 1rem;
+          place-self: center;
+        }
+      }
+    }
+  }
 `;
 
 export { Section };

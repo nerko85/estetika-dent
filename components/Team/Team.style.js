@@ -10,6 +10,14 @@ const Team = styled.div`
     text-align: center;
     margin-bottom: 10rem;
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    padding: 4rem;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+  }
 `;
 
 export { Team };

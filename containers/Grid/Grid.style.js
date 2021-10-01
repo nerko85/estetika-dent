@@ -4,6 +4,10 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 8rem;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    grid-gap: 3rem;
+  }
 `;
 
 const GridItem = styled.div`
@@ -19,6 +23,10 @@ const GridItem = styled.div`
       margin-top: 0rem;
       justify-content: flex-start;
     }
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    margin-top: 2rem;
   }
 
   .item-text {
