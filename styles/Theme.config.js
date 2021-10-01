@@ -27,6 +27,7 @@ const colors = {
   primary: "#141C5E",
   gold: "#CA9C5E",
   text: "#52575D",
+  gray: "#B2B2B2",
   white: "#fff",
   beige: "rgba(202,156,94,0.15)",
 };
