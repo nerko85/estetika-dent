@@ -1,6 +1,7 @@
 import React from "react";
 import { AccordionItem as Item } from "./Accordion.style";
 import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 export default function AccordionItem({
   id,
@@ -12,6 +13,13 @@ export default function AccordionItem({
   const handleClick = (id) => {
     setCurrent(id);
   };
+  const variants = {
+    hidden: { scaleY: 0 },
+    visible: {
+      scaleY: 1,
+      transition: { type: "spring", duration: 0.6, origin: "top" },
+    },
+  };
   return (
     <Item
       className={id === current ? "active" : ""}
@@ -21,7 +29,17 @@ export default function AccordionItem({
         {current === id ? <AiOutlinePlusCircle /> : <AiOutlineMinusCircle />}
         <h3>{question}</h3>
       </div>
-      {current === id && <p>{answer}</p>}
+      {current === id && (
+        <motion.p
+          key={current}
+          style={{ originY: 0 }}
+          initial="hidden"
+          animate="visible"
+          variants={variants}
+        >
+          {answer}
+        </motion.p>
+      )}
     </Item>
   );
 }
