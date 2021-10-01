@@ -15,6 +15,7 @@ const Section = styled.section`
       display: flex;
       color: ${({ theme }) => theme.text};
       font-family: ${({ theme }) => theme.heading};
+      padding: 0 4vw;
 
       .section-content {
         margin: auto;
@@ -38,6 +39,7 @@ const Section = styled.section`
       overflow: hidden;
       isolation: isolate;
       position: relative;
+      max-width: 45vw;
 
       img {
         width: 100%;
@@ -64,7 +66,12 @@ const Section = styled.section`
     }
   }
 
-  @media (min-width: ${({ theme }) => theme.desktop}) {
+  @media (min-width: ${({ theme }) => theme.widescreen}) {
+    .inner .section--text {
+      padding: 0 10vw;
+    }
+  }
+  @media (min-width: ${({ theme }) => theme.tablet}) {
     padding: 0;
     .inner {
       padding: 0;
@@ -74,18 +81,19 @@ const Section = styled.section`
       grid-template-columns: ${({ dir }) =>
         dir === "left" ? "1fr auto" : "auto 1fr"};
 
-      .section--text {
-        padding: 0 15rem;
-      }
-
       .section--media {
         justify-content: flex-start;
-        height: calc(100vh - 100px);
+        max-height: 100vh;
         border-right: 1px solid ${({ theme }) => theme.gold};
         border-left: 1px solid ${({ theme }) => theme.gold};
         img {
-          height: 100%;
-          width: auto;
+          ${
+            "" /* height: 100%;
+          width: auto; */
+          }
+          width:100%;
+          height: auto;
+          object-fit: contain;
         }
       }
     }
@@ -95,6 +103,7 @@ const Section = styled.section`
     .inner {
       .section--media {
         order: -1;
+        max-width: 100vw;
       }
 
       .section--text {
