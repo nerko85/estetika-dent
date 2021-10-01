@@ -1,14 +1,37 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
-import { VscArrowRight, VscChromeClose, VscMenu } from "react-icons/vsc";
+import { useState, useEffect } from "react";
+import { VscArrowRight } from "react-icons/vsc";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
+import { useRouter } from "next/router";
 
 import { Logo, Navigation, Header as StyledHeader } from "./Header.style";
 
 export default function Header() {
   const [active, setActive] = useState(false);
+  const router = useRouter();
+
+  function myTest() {
+    setActive(!active);
+    active
+      ? (document.body.style.overflow = "")
+      : (document.body.style.overflow = "hidden");
+  }
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", handleRouterChange);
+    return () => {
+      router.events.off("routeChangeStart", handleRouterChange);
+    };
+  });
+
+  const handleRouterChange = () => {
+    setActive(false);
+    document.body.style.overflow = "";
+  };
+
   return (
     <StyledHeader>
       <div className="container-fluid">
@@ -20,7 +43,7 @@ export default function Header() {
               </a>
             </Link>
           </Logo>
-          <Navigation>
+          <Navigation active={active}>
             <ul>
               <li>
                 <Link href="/about">
@@ -45,7 +68,7 @@ export default function Header() {
               <li className="book-term">
                 <Link href="/book">
                   <a>
-                    Bukiraj onilie{" "}
+                    Bukiraj oniline
                     <span>
                       <VscArrowRight />
                     </span>
@@ -54,7 +77,7 @@ export default function Header() {
               </li>
             </ul>
           </Navigation>
-          <div className="mobile--menu" onClick={() => setActive(!active)}>
+          <div className="mobile--menu" onClick={myTest}>
             {active ? <AiOutlineClose /> : <AiOutlineMenu />}
           </div>
         </div>
