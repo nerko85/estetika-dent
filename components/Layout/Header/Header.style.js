@@ -77,6 +77,7 @@ const Navigation = styled.nav`
     inset: 0;
     z-index: 999;
     display: flex;
+    transform: translateX(-100%);
     transform: ${({ active }) =>
       active ? "translateX(0%);" : "translateX(-100%)"};
     transition: transform 1s ease;
