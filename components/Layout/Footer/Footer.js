@@ -62,14 +62,14 @@ export default function Footer() {
             <h3>Pratite nas</h3>
             <ul>
               <li>
-                <Link href="www.facebook.com">
+                <Link href="https://www.facebook.com/estetikadent.ba">
                   <a target="_blank">
                     <FaFacebookF />
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="www.instagram.com">
+                <Link href="https://www.instagram.com/estetika__dent/">
                   <a target="_blank">
                     <FaInstagram />
                   </a>

@@ -8,6 +8,7 @@ const ContactStrip = styled.section`
   h1 {
     cursor: pointer;
     span {
+      margin-left: 2rem;
       font-size: 3rem;
     }
 

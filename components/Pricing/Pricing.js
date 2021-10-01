@@ -8,7 +8,7 @@ export default function Pricing() {
       <div className="container-fluid">
         <div className="inner">
           <div className="pricing">
-            <Link href="/pricing">
+            <Link href="/services">
               <a>
                 <h1>Pogledajte cjenovnik</h1>
               </a>

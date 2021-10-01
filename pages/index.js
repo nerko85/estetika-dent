@@ -26,7 +26,7 @@ export default function Home() {
         title="Posjeta zubaru bez brige, suza, uz vrhunske stručnjake"
         img="/images/mature-lady-showing-theets.png"
       >
-        <Button>Kontaktirajte nas</Button>
+        <Button url="/contact">Kontaktirajte nas</Button>
       </Hero>
 
       <CustomSection
