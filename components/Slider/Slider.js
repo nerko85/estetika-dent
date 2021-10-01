@@ -28,19 +28,17 @@ export default function Slider({ elements, children, type, perView, nav }) {
           breakpoints={{
             300: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
             640: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 0,
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 40,
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 50,
             },
           }}
         >

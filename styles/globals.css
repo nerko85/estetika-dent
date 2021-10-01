@@ -43,6 +43,11 @@ a {
   border-radius: 50%;
   z-index: 999;
   cursor: pointer;
+  transition: all 0.35s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.custom-btn svg {
+  position: relative;
 }
 
 .custom-btn.swiper-next {
@@ -51,4 +56,32 @@ a {
 
 .custom-btn.swiper-prev {
   left: 2rem;
+}
+
+.custom-btn:hover {
+  background-color: #ca9c5e;
+  color: #fff;
+}
+
+.custom-btn:hover svg {
+  animation: arrow 1s forwards infinite;
+}
+
+@media (max-width: 500px) {
+  .custom-btn {
+    top: 46%;
+    padding: 1.5rem;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
