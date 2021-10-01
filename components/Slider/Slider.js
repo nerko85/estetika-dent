@@ -3,10 +3,10 @@ import { Slider as StyledSlider } from "./Slider.style";
 import Card from "../../containers/Card";
 import { VscArrowRight, VscArrowLeft } from "react-icons/vsc";
 
-import SwiperCore, { Navigation, Pagination } from "swiper/core";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/swiper-react.cjs.js";
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default function Slider({ elements, children, type, perView, nav }) {
   return (
@@ -21,6 +21,10 @@ export default function Slider({ elements, children, type, perView, nav }) {
             prevEl: ".swiper-prev",
           }}
           loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             300: {
               slidesPerView: 1,

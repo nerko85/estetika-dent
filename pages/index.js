@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
       <Hero
-        title="Posjeta zubaru bez brige, suza, uz vrhunske strucnjake"
+        title="Posjeta zubaru bez brige, suza, uz vrhunske stručnjake"
         img="/images/mature-lady-showing-theets.png"
       >
         <Button>Kontaktirajte nas</Button>
@@ -39,16 +39,16 @@ export default function Home() {
 
       <Accomodation accomodations={accomodations} />
 
-      <Team members={homeMembers} title="Vrhunski strucnjaci" />
+      <Team members={homeMembers} title="Vrhunski stručnjaci" />
 
       <Services services={services}>
-        <h1>Nase usluge</h1>
+        <h1>Naše usluge</h1>
       </Services>
 
       <Pricing />
 
       <Accordion faqs={faqs}>
-        <h1>Cesta pitanja</h1>
+        <h1>Česta pitanja</h1>
       </Accordion>
 
       <ContactStrip text="Imate pitanja? Kontaktirajte nas" />

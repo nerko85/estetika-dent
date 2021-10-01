@@ -45,7 +45,7 @@ export default function About() {
         <Button>Bukiraj online</Button>
       </CustomSection>
 
-      <Team members={members} title="Vrhunski strucnjaci" />
+      <Team members={members} title="Vrhunski stručnjaci" />
 
       <ContactStrip text="Imate pitanja? Kontaktirajte nas" />
     </>

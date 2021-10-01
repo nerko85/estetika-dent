@@ -3,10 +3,10 @@ import { Services as StyledServices } from "./Services.style";
 import { VscArrowRight, VscArrowLeft } from "react-icons/vsc";
 import Card from "../../containers/Card";
 
-import SwiperCore, { Navigation, Pagination } from "swiper/core";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/swiper-react.cjs.js";
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default function Services({ children, services }) {
   return (
@@ -22,6 +22,10 @@ export default function Services({ children, services }) {
             prevEl: ".swiper-prev",
           }}
           loop={true}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: true,
+          }}
           breakpoints={{
             300: {
               slidesPerView: 1,

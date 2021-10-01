@@ -72,7 +72,7 @@ const Footer = styled.footer`
     padding: 4rem 0;
     .inner {
       & > * {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
       .footer--links,
       .social {
