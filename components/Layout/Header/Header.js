@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { VscArrowRight } from "react-icons/vsc";
+import { useState } from "react";
+import { VscArrowRight, VscChromeClose, VscMenu } from "react-icons/vsc";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import { Logo, Navigation, Header as StyledHeader } from "./Header.style";
 
 export default function Header() {
+  const [active, setActive] = useState(false);
   return (
     <StyledHeader>
       <div className="container-fluid">
@@ -51,6 +54,9 @@ export default function Header() {
               </li>
             </ul>
           </Navigation>
+          <div className="mobile--menu" onClick={() => setActive(!active)}>
+            {active ? <AiOutlineClose /> : <AiOutlineMenu />}
+          </div>
         </div>
       </div>
     </StyledHeader>

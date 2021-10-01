@@ -11,6 +11,20 @@ const Header = styled.header`
     justify-content: space-between;
     align-items: center;
   }
+
+  .mobile--menu {
+    display: none;
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    .mobile--menu {
+      display: inline-block;
+      svg {
+        font-size: 3rem;
+        color: #fff;
+      }
+    }
+  }
 `;
 
 const Logo = styled.h1`
