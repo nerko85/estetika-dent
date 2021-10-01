@@ -68,7 +68,7 @@ const Navigation = styled.nav`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     position: absolute;
     width: 100vw;
-    max-height: 100vh;
+    min-height: 100vh;
     background: ${({ theme }) => theme.primary};
     top: 0;
     bottom: 0;
