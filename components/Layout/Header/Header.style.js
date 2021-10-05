@@ -80,7 +80,7 @@ const Navigation = styled.nav`
     transform: translateX(-100%);
     transform: ${({ active }) =>
       active ? "translateX(0%);" : "translateX(-100%)"};
-    transition: transform 1s ease;
+    transition: transform 0.5s cubic-bezier(0.85, 0, 0.15, 1);
     ul {
       flex-direction: column;
       margin: auto;
