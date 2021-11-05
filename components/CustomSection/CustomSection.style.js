@@ -15,7 +15,7 @@ const Section = styled.section`
       display: flex;
       color: ${({ theme }) => theme.text};
       font-family: ${({ theme }) => theme.heading};
-      padding: 0 4vw;
+      padding: 0 2vw;
 
       .section-content {
         margin: auto;
@@ -68,7 +68,7 @@ const Section = styled.section`
 
   @media (min-width: ${({ theme }) => theme.widescreen}) {
     .inner .section--text {
-      padding: 0 10vw;
+      padding: 0 5vw;
     }
   }
   @media (min-width: ${({ theme }) => theme.tablet}) {
@@ -91,9 +91,9 @@ const Section = styled.section`
             "" /* height: 100%;
           width: auto; */
           }
-          width:100%;
-          height: auto;
-          object-fit: contain;
+          ${'' /* width:100%; */}
+          height: 100%;
+          ${'' /* object-fit: contain; */}
         }
       }
     }
@@ -104,6 +104,11 @@ const Section = styled.section`
       .section--media {
         order: -1;
         max-width: 100vw;
+        img {
+          width:100%;
+          height: auto;
+          object-fit: contain;
+        }
       }
 
       .section--text {

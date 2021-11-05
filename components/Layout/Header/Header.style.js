@@ -42,6 +42,7 @@ const Navigation = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    position:relative;
     li {
       padding: 3.5rem 3rem;
       a {
@@ -49,6 +50,21 @@ const Navigation = styled.nav`
         color: #fff;
         font-size: 1.4rem;
         font-family: ${({ theme }) => theme.font};
+      }
+
+      .sub-list {
+        display:none;
+        
+        li {
+            padding:0.5rem 1rem!important;
+          a{
+            font-size:1.4rem;
+          }
+        }
+
+        @media(max-width:${({theme})=>theme.tablet}){
+          display:block;
+        }
       }
     }
 

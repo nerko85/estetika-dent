@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const Footer = styled.footer`
-  padding: 8rem 0;
+  padding: 10rem 0;
   background: ${({ theme }) => theme.primary};
   color: #fff;
   font-family: ${({ theme }) => theme.font};
+
   .inner {
     ul {
       list-style: none;
@@ -18,6 +19,10 @@ const Footer = styled.footer`
         h3 {
           font-family: ${({ theme }) => theme.heading};
           color: ${({ theme }) => theme.gold};
+          margin-bottom:1rem;
+        }
+        p {
+          line-height:2;
         }
       }
     }

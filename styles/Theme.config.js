@@ -71,7 +71,7 @@ const GlobalStyles = createGlobalStyle`
         font-weight:200;
     }
 
-    p {
+    p, li {
         font-family:${({ theme }) => theme.font};
         font-size:1.7rem;
         line-height:1.7;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ContactStrip = styled.section`
-  padding: 2rem;
+  padding: 3rem;
   color: ${({ theme }) => theme.gold};
   text-align: center;
 

@@ -18,8 +18,8 @@ export default function About() {
       </Head>
 
       <Hero
-        title="Odlazak zubaru po evropskim standardima"
-        img="/images/mature-lady-showing-theets.png"
+        title="Stomatološka ordinacija Estetika Dent"
+        img="/images/about-hero-bg.png"
       >
         <Button>Bukiraj online</Button>
       </Hero>
@@ -29,23 +29,23 @@ export default function About() {
       </Accomodation>
 
       <CustomSection
-        title="Lokacija 1"
-        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        img="/images/about-img-1.png"
+        title="Estetika Dent Derventa"
+        desc="Lug BB , magistralni put Derventa-Prnjavor, 100m poslije Doma za stara lica-Zlatni lug, sa desne strane Derventa, 74 400 Bosnia and Herzegovina"
+        img="/images/about-estetika-section.png"
       >
         <Button>Bukiraj online</Button>
       </CustomSection>
 
       <CustomSection
-        title="Lokacija 2"
+        title="Estetika Dent Gradačac"
         desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        img="/images/about-img-2.png"
+        img="/images/about-estetik2-section.png"
         dir="left"
       >
         <Button>Bukiraj online</Button>
       </CustomSection>
 
-      <Team members={members} title="Vrhunski stručnjaci" />
+      <Team members={members} title="Naše osoblje" />
 
       <ContactStrip text="Imate pitanja? Kontaktirajte nas" />
     </>

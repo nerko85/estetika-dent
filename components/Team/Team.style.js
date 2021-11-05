@@ -11,6 +11,11 @@ const Team = styled.div`
     margin-bottom: 10rem;
   }
 
+  p {
+    text-transform:uppercase;
+    font-weight:300;
+  }
+
   @media (max-width: ${({ theme }) => theme.tablet}) {
     padding: 4rem;
 

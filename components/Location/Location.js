@@ -17,7 +17,7 @@ export default function Location({ company }) {
               <span>
                 <FaMapMarkerAlt />
               </span>
-              Adresa: {company.address}
+              Adresa: {company.location}
             </li>
             <li>
               <span>

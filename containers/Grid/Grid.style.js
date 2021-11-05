@@ -37,10 +37,6 @@ const GridItem = styled.div`
       color: ${({ theme }) => theme.gold};
       margin-top: 2rem;
     }
-
-    P {
-      text-transform: ${({ type }) => console.log(type)};
-    }
   }
 `;
 

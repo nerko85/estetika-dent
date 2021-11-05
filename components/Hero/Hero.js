@@ -14,10 +14,9 @@ export default function Hero({ children, title, desc, img }) {
           <img src={img} alt="Mature lady showing her theets" />
           <div className="quote">
             <blockquote>
-              "Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the"
+              "Profesionalna usluga, ljubazno osoblje i prekrasno uređen ambijent. Sve pohvale."
             </blockquote>
-            <span>Aleksandra Kovac</span>
+            <span>Dejan Radić</span>
           </div>
         </div>
       </div>

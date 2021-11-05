@@ -7,7 +7,12 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { company } from "../../../data";
 
 export default function Footer() {
-  console.log(company);
+  const {
+    workingHours: { from, to },
+    phone,
+    mobile,
+    email
+  } = company.address[0];
   return (
     <StyledFooter>
       <div className="container">
@@ -20,21 +25,12 @@ export default function Footer() {
         </h1>
         <div className="inner">
           <div className="details">
-            {company?.address.map((address) => {
-              const {
-                workingHours: { from, to },
-                phone,
-              } = address;
-              return (
-                <div key={address.id} className="details--item">
-                  <h3>{address.location}</h3>
-                  <p>
-                    {from.day} - {to.day}:{from.hour} - {to.hour}
-                  </p>
-                  <p>{phone}</p>
-                </div>
-              );
-            })}
+              <div key={company.address[0].id} className="details--item">
+                <h3>{company.address[0].location}</h3>
+                <p>{phone}</p>
+                <p>{mobile}</p>
+                <p>{email}</p>
+              </div>
           </div>
           <ul className="footer--links">
             <li>

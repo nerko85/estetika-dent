@@ -4,13 +4,17 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { VscArrowRight } from "react-icons/vsc";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import MenuModal from "../../MenuModal/MenuModal";
 
 import { useRouter } from "next/router";
+
+import { services } from "../../../data/services";
 
 import { Logo, Navigation, Header as StyledHeader } from "./Header.style";
 
 export default function Header() {
   const [active, setActive] = useState(false);
+  const [modalActive, setModalActive]=useState(false);
   const router = useRouter();
 
   function myTest() {
@@ -32,6 +36,11 @@ export default function Header() {
     document.body.style.overflow = "";
   };
 
+  const handleClick = (e)=>{
+    e.preventDefault();
+    setModalActive(!modalActive);
+  }
+
   return (
     <StyledHeader>
       <div className="container-fluid">
@@ -50,16 +59,28 @@ export default function Header() {
                   <a>O nama</a>
                 </Link>
               </li>
-              <li>
-                <Link href="/services">
+              <li onClick={handleClick}>
+                <Link href="#">
                   <a>Usluge i cjenovnik</a>
                 </Link>
+                { modalActive && <MenuModal/> }
+                  <ul className="sub-list">
+                  {
+                  services.map(service=>(
+                      <li>
+                          <Link href={`/services/${service.slug}`}>
+                              <a>{service.title}</a>
+                          </Link>
+                      </li>
+                  ))
+                  }
+                </ul> 
               </li>
-              <li>
+              {/* <li>
                 <Link href="/news">
                   <a>Aktuelnosti</a>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact">
                   <a>Kontakt</a>

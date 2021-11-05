@@ -13,7 +13,7 @@ import Accordion from "../components/Accordion";
 import { members, team, accomodations, services, faqs } from "../data";
 
 export default function Home() {
-  const homeMembers = members.slice(3);
+  // const homeMembers = members.slice(3);
   return (
     <>
       <Head>
@@ -24,22 +24,22 @@ export default function Home() {
 
       <Hero
         title="Posjeta zubaru bez brige, suza, uz vrhunske stručnjake"
-        img="/images/mature-lady-showing-theets.png"
+        img="/images/section-home-hero.png"
       >
         <Button url="/contact">Kontaktirajte nas</Button>
       </Hero>
 
       <CustomSection
         title="Osjećajte se kao kod kuće"
-        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        img="/images/mature-lady-showing-theets.png"
+        desc="Naš odnos prema poslu koji obavljamo, osmišljen je tako da vrijeme koje pacijent provede sa nama – sve od prvoga ulaska u ordinaciju, preko kontakta sa zaposlenim osobljem, pa do postupka primjene adekvatne terapije – protekne u prijatnoj atmosferi i bez sporednih opterećenja."
+        img="/images/section-home-about.png"
       ></CustomSection>
 
       <Slider elements={team}></Slider>
 
       <Accomodation accomodations={accomodations} />
 
-      <Team members={homeMembers} title="Vrhunski stručnjaci" />
+      <Team members={members} title="Naše osoblje" />
 
       <Services services={services}>
         <h1>Naše usluge</h1>
