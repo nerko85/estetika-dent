@@ -15,13 +15,13 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <CustomSection title="Derventa" img="/images/office1.png" dir="left">
+      <CustomSection title="Derventa" img="/images/contact-derventa.png" dir="left">
         <Location company={company.address[0]} />
       </CustomSection>
 
-      <CustomSection title="Gradačac" img="/images/office1.png">
+      {/* <CustomSection title="Gradačac" img="/images/office1.png">
         <Location company={company.address[1]} />
-      </CustomSection>
+      </CustomSection> */}
 
       <Form title="Pišite nam" />
 

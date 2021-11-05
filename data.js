@@ -50,7 +50,7 @@ const team = [
     img: "/images/danka-radic-testimonial.png",
     name: "Danka Radić",
     desc:
-      "Moj dugogodišnji strah od posjete stomatologu je prestao dolaskom u ordinaciju Estetika Dent. Doktori su veoma je strpljivi u radu s pacijentima i imaju veoma prijatan odnos. Profesionalni su i odgovorni u svom radu.",
+      "Moj dugogodišnji strah od posjete stomatologu je prestao dolaskom u ordinaciju Estetika Dent. Doktori su veoma je strpljivi u radu s pacijentima i imaju veoma prijatan odnos. Profesionalni su i odgovorni.",
   },
   {
     id: 3,
