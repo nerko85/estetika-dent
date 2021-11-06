@@ -62,8 +62,8 @@ export default function Header() {
                   <a>O nama</a>
                 </Link>
               </li>
-              <li onClick={handleClick} href="#">
-                <Link>
+              <li onClick={handleClick}>
+                <Link  href="#">
                   <a className="usluge">Usluge i cjenovnik</a>
                 </Link>
                 { modalActive && <MenuModal/> }
