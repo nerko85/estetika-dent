@@ -38,13 +38,16 @@ export default function Header() {
 
   const handleClick = (e)=>{
     e.preventDefault();
+    if(!e.target.className === "usluge") {
+      setModalActive(false);
+    }
     setModalActive(!modalActive);
   }
 
   return (
     <StyledHeader>
       <div className="container-fluid">
-        <div className="inner">
+        <div onClick={handleClick} className="inner">
           <Logo>
             <Link href="/">
               <a>
@@ -59,15 +62,15 @@ export default function Header() {
                   <a>O nama</a>
                 </Link>
               </li>
-              <li onClick={handleClick}>
+              <li>
                 <Link href="#">
-                  <a>Usluge i cjenovnik</a>
+                  <a className="usluge">Usluge i cjenovnik</a>
                 </Link>
                 { modalActive && <MenuModal/> }
                   <ul className="sub-list">
                   {
-                  services.map(service=>(
-                      <li>
+                  services.map((service,i)=>(
+                      <li key={i} >
                           <Link href={`/services/${service.slug}`}>
                               <a>{service.title}</a>
                           </Link>
