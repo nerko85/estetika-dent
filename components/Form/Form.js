@@ -19,7 +19,7 @@ export default function Form({ title }) {
   };
 
   const onSubmit = (values) => {
-    fetch("/api/mail", {
+    fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(values),
     })
