@@ -47,7 +47,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <div className="container-fluid">
-        <div onClick={handleClick} className="inner">
+        <div className="inner">
           <Logo>
             <Link href="/">
               <a>
@@ -63,7 +63,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link onClick={handleClick} href="#">
                   <a className="usluge">Usluge i cjenovnik</a>
                 </Link>
                 { modalActive && <MenuModal/> }
