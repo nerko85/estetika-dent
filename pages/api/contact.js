@@ -1,5 +1,4 @@
 let nodemailer = require("nodemailer");
-const nodemailerSendgrid = require("nodemailer-sendgrid");
 
 export default (req, res) => {
   const body = JSON.parse(req.body);
