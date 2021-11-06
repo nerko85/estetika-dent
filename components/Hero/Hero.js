@@ -1,7 +1,7 @@
 import React from "react";
 import { Hero as StyledHero } from "./Hero.style";
 
-export default function Hero({ children, title, desc, img }) {
+export default function Hero({ children, person, title, desc, img, quote }) {
   return (
     <StyledHero>
       <div className="inner">
@@ -14,9 +14,9 @@ export default function Hero({ children, title, desc, img }) {
           <img src={img} alt="Mature lady showing her theets" />
           <div className="quote">
             <blockquote>
-              "Od danas se više ne bojim ići kod zubara jer zubari vole malu djecu""
+              {quote}
             </blockquote>
-            <span>Dejan Petrović</span>
+            <span>{person}</span>
           </div>
         </div>
       </div>

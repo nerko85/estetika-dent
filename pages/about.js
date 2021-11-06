@@ -20,6 +20,8 @@ export default function About() {
       <Hero
         title="Stomatološka ordinacija Estetika Dent"
         img="/images/about-hero-bg.png"
+        quote="Profesionalna usluga, ljubazno osoblje i prekrasno uređen ambijent. Sve pohvale."
+        person="Dejan Radić"
       >
         <Button>Bukiraj online</Button>
       </Hero>

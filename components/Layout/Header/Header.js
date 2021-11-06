@@ -38,9 +38,9 @@ export default function Header() {
 
   const handleClick = (e)=>{
     e.preventDefault();
-    if(!e.target.className === "usluge") {
-      setModalActive(false);
-    }
+    // if(!e.target.className === "usluge") {
+    //   setModalActive(false);
+    // }
     setModalActive(!modalActive);
   }
 

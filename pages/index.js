@@ -25,6 +25,8 @@ export default function Home() {
       <Hero
         title="Posjeta zubaru bez brige, suza, uz vrhunske stručnjake"
         img="/images/section-home-hero.png"
+        quote="Od danas se više ne bojim ići kod zubara jer zubari vole malu djecu"
+        person="Dejan Petrović"
       >
         <Button url="/contact">Kontaktirajte nas</Button>
       </Hero>
