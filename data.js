@@ -79,9 +79,9 @@ const company = {
           hour: "5:00PM",
         },
       },
-      phone: "+387 053 310 490",
-      mobile: "+387 065 742 906",
-      email: "estetikadent@teol.net",
+      phone: "+387 053 310 310",
+      mobile: "+387 066 393 222",
+      email: "derventa@estetikadent.ba",
     },
     {
       id: 2,
@@ -146,7 +146,7 @@ const services = [
   },
   {
     id: 3,
-    title: "Mobilna Stomatološka Srotetika",
+    title: "Mobilna Stomatološka Protetika",
     desc:
       "U slučajevima kada iz različitih razloga nije moguće ugraditi fiksne protetske nanadoknade, mobilna protetika nudi adekvatno rješenje.",
     img: "/images/veneers.png",
