@@ -14,9 +14,9 @@ export default function Hero({ children, title, desc, img }) {
           <img src={img} alt="Mature lady showing her theets" />
           <div className="quote">
             <blockquote>
-              "Profesionalna usluga, ljubazno osoblje i prekrasno uređen ambijent. Sve pohvale."
+              ""Od danas se više ne bojim ići kod zubara jer zubari vole malu djecu""
             </blockquote>
-            <span>Dejan Radić</span>
+            <span>Aleksandar Kovač</span>
           </div>
         </div>
       </div>
