@@ -14,8 +14,8 @@ export default (req, res) => {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: "nermin@forgeit.qa", // generated ethereal user
-      pass: "Nermin1!", // generated ethereal password
+      // user: "nermin@forgeit.qa", // generated ethereal user
+      // pass: "Nermin1!", // generated ethereal password
     },
   });
 
