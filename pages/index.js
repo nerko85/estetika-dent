@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dental Estetica - Improve your smile</title>
+        <title>Estetika Dent - Improve your smile</title>
         <meta name="description" content="We take care of your smile" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
