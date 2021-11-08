@@ -23,7 +23,7 @@ export default {
       {
         property: "keywords",
         content:
-          "work clothing, work shoes, htz, radna obuca, radna odjeca, cipele, hatezejke, shoes, blause, neon bluze ",
+          "dental, teeths, oral care, dental care, dental plans, dental discount plans, dental plans, dental centers, dental clinics, bs dental clinics, dental implants, dental implants, orthodontic care, orthodontics, orthodontics",
       },
     ],
   };
