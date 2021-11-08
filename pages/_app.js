@@ -9,9 +9,14 @@ import Layout from "../components/Layout";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles, mainTheme, darkTheme } from "../styles/Theme.config";
 
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
+
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <DefaultSeo {...SEO} />
       <Head>
         <title>Estetika Dent - Improve your smile</title>
         <meta name="description" content="We take care of your smile" />
