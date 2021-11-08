@@ -16,12 +16,6 @@ export default function Home() {
   // const homeMembers = members.slice(3);
   return (
     <>
-      <Head>
-        <title>Estetika Dent - Improve your smile</title>
-        <meta name="description" content="We take care of your smile" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Hero
         title="Posjeta zubaru bez brige, suza, uz vrhunske stručnjake"
         img="/images/section-home-hero.png"
