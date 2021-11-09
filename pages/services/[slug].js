@@ -30,7 +30,7 @@ export default function Service({service}) {
         img={service?.img}
         dir="left"
       >
-        <Button>Bukiraj online</Button>
+        <Button target="_blank" url="https://estetikadent.alpindent.com/login">Bukiraj online</Button>
       </CustomSection>
 
         {service.additional_info &&

@@ -32,7 +32,7 @@ export default function Contact() {
 
       <Form title="Pišite nam" />
 
-      <ContactStrip text="Bukirajte pregled online" />
+      <ContactStrip url="https://estetikadent.alpindent.com/login" text="Bukirajte pregled online" />
     </>
   );
 }

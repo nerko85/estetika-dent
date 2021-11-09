@@ -30,7 +30,7 @@ export default function About() {
         quote="Profesionalna usluga, ljubazno osoblje i prekrasno uređen ambijent. Sve pohvale."
         person="Dejan Radić"
       >
-        <Button>Bukiraj online</Button>
+        <Button target="_blank" url="https://estetikadent.alpindent.com/login">Bukiraj online</Button>
       </Hero>
 
       <Accomodation accomodations={comfort} size="small">
@@ -51,7 +51,7 @@ export default function About() {
         img="/images/about-estetik2-section.png"
         dir="left"
       >
-        <Button>Bukiraj online</Button>
+        <Button target="_blank" url="https://estetikadent.alpindent.com/login">Bukiraj online</Button>
       </CustomSection>
 
       <Team members={members} title="Naše osoblje" />

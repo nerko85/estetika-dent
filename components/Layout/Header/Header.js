@@ -90,7 +90,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className="book-term">
-                <Link href="/book">
+                <Link href="https://estetikadent.alpindent.com/login">
                   <a>
                     Bukiraj oniline
                     <span>

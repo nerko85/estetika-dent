@@ -43,11 +43,11 @@ export default function Footer() {
                 <a>Usluge i cjenovnik</a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/news">
                 <a>Aktuelnosti</a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contact">
                 <a>Kontakt</a>
