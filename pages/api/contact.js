@@ -27,7 +27,7 @@ export default (req, res) => {
 
   const mailData = {
     from: "admin@estetikadent.ba",
-    to: "estetikadent@teol.net",
+    to: "nermin@forgeit.qa",
     subject: `Poruka sa webstranice Estetika Dent`,
     text: message,
     html: message.replace(/\r\n/g, "<br>"),
