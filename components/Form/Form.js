@@ -6,6 +6,7 @@ import Button from "../../containers/Button";
 import Input from "../../containers/Input/Input";
 import TextArea from "../../containers/Input/TextArea";
 import { Form as StyledForm } from "./Form.style";
+import styled from "styled-components";
 
 export default function Form({ title }) {
   const [message, setMessage] = useState(null);
@@ -112,3 +113,12 @@ export default function Form({ title }) {
     </StyledForm>
   );
 }
+
+const InputErrorBox = styled.span`
+  color: #ff6271;
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  margin: 4px 0;
+  text-align: left;
+`;

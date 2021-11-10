@@ -19,7 +19,7 @@ export default (req, res) => {
   });
 
   const message = `
-    Name: ${body.firstname} ${body.lastname} \r\n
+    Name: ${body.name} \r\n
     Email: ${body.email}\r\n
     Phone number: ${body.phone}\r\n
     Message: ${body.message}\r\n
