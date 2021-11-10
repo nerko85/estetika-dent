@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Accomodation = styled.section`
+  margin-top:-1px;
   padding: 14rem 0;
   background: ${({ theme }) => theme.beige};
   border-top: 1px solid ${({ theme }) => theme.gold};
