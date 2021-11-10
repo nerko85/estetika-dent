@@ -91,6 +91,10 @@ const Hero = styled.section`
       }
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+      min-height: calc(100vh - 90px);
+    }
 `;
 
 export { Hero };
