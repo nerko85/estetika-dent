@@ -3,20 +3,19 @@ let nodemailer = require("nodemailer");
 export default (req, res) => {
   const body = JSON.parse(req.body);
 
-  // const transporter = nodemailer.createTransport(
-  //   nodemailerSendgrid({
-  //     apiKey: process.env.SENDGRID_API_KEY,
-  //   })
-  // );
-
-  let transporter = nodemailer.createTransport({
-    host: "smtp.hostinger.com",
-    port: 587,
-    secure: false, // true for 465, false for other ports
+ // create transporter
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
-      // user: "nermin@forgeit.qa", // generated ethereal user
-      // pass: "Nermin1!", // generated ethereal password
-    },
+        type: 'OAuth2',
+        user: process.env.EMAIL, // your email
+        clientId: process.env.GMAIL_CLIENT_ID, // oauth cliend id 
+        clientSecret: process.env.GMAIL_CLIENT_SECRET, // secret 
+        refreshToken: process.env.REFRESH_TOKEN, // refresh token 
+        accessToken: process.env.ACCESS_TOKEN // access token
+    }
   });
 
   const message = `
@@ -34,6 +33,7 @@ export default (req, res) => {
     html: message.replace(/\r\n/g, "<br>"),
   };
 
+  // send an email
   transporter.sendMail(mailData, function (err, info) {
     if (err) res.json({ error: `Desila se greška. Pokušajte ponovo.${err}` });
     else
