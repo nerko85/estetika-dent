@@ -38,7 +38,7 @@ export default (req, res) => {
     if (err) res.json({ error: `Desila se greška. Pokušajte ponovo.${err}` });
     else
       res.json({
-        message: `Uspjesno ste se prijavili na ${body.course}`,
+        message: `Vaša poruka je uspješno poslana. Hvala vam na odvojenom vremenu.`,
       });
   });
   res.status(200);

@@ -102,11 +102,11 @@ export default function Form({ title }) {
           </button>
 
           {error && (
-            <InputErrorBox style={{ color: "red" }}>{error}</InputErrorBox>
+            <InputErrorBox type="error">{error}</InputErrorBox>
           )}
 
           {message && (
-            <InputErrorBox style={{ color: "green" }}>{message}</InputErrorBox>
+            <InputErrorBox type="success">{message}</InputErrorBox>
           )}
         </div>
       </form>
@@ -114,11 +114,22 @@ export default function Form({ title }) {
   );
 }
 
+<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4" role="alert">
+  <p class="font-bold">Be Warned</p>
+  <p>Something not ideal might be happening.</p>
+</div>
+
 const InputErrorBox = styled.span`
-  color: #ff6271;
-  font-size: 12px;
-  font-family: "Open Sans";
-  font-weight: 700;
-  margin: 4px 0;
+  background:${({type})=>type=="error"? "#fff5f5" : "#e6fffa"};
+  ${'' /* border:1px solid #f56565; */}
+  color:${({type})=>type=="error"? "#c63433" : "#245054"};
+  border-top-width: 4px!important;
+  border-top-style: solid;
+  border-color:${({type})=>type=="error"? "#f56565" : "#38b2ac"};
+  padding:2rem;
+  font-size: 1.6rem;
+  letter-spacing:1px;
+  margin: 1rem 0 2rem;
   text-align: left;
+  box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
 `;
