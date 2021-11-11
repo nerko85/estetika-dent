@@ -39,7 +39,7 @@ export default function About() {
 
       <CustomSection
         title="Estetika Dent Derventa"
-        desc="Lug BB , magistralni put Derventa-Prnjavor, 100m poslije Doma za stara lica-Zlatni lug, sa desne strane Derventa, 74 400 Bosnia and Herzegovina"
+        desc="Nalazimo se u Lugu, na magistralnom putu Derventa – Banja Luka, u objektu koji je u prostornom smislu apsolutno prilagođen potrebama i radu zdravstvene ustanove kao i planovima našeg daljeg razvoja i unapređenja."
         img="/images/about-estetika-section.png"
       >
         <Button>Bukiraj online</Button>
@@ -47,7 +47,7 @@ export default function About() {
 
       <CustomSection
         title="Estetika Dent Gradačac"
-        desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        desc="Nalazimo se u ulici 6. bataljona bb Gradačac 76250, Bosna i Hercegovina. Naša nova poslovnica će biti uskoro otvorena te ćete blagovremeno biti obavješteni o početku rada."
         img="/images/about-estetik2-section.png"
         dir="left"
       >
